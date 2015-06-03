@@ -26,4 +26,23 @@ More random text that you want commented out. More random text that you want com
 More random text that you want commented out. More random text that you want commented out.<br/>
 =end
 ```
+___
 
+**Rubocop ERRORs**
+
+I got a few errors on this file...
+
+```
+Offenses:
+
+chapter_2/ex2.rb:11:1: C: Extra blank line detected.
+chapter_2/ex2.rb:13:2: C: Incorrect indentation detected (column 1 instead of 0).
+ # conflicts with Rubocop.
+ ^^^^^^^^^^^^^^^^^^^^^^^^^
+chapter_2/ex2.rb:14:1: C: 1 trailing blank lines detected.
+```
+
+So, it would appear that Rubocop doesn't like more than one blank line between lines of code, or at the end of a file<br/>
+I deleted the extra line to fix that offence.<br/>
+Then for the 'Incorrect indentation detected' offence I found that one of my comments had a space before the octothorpe.
+Once I deleted that extra space everything was good and no offences were detected.
