@@ -26,3 +26,13 @@ For example:<br/>
 2.2.1 :012 > 8 * 4 * 5 * 1.0
  => 160.0 # int * int * int * float = float
 ```
+
+
+### Rubocop guard issues
+
+I got a few offences on my files
+
+* Some unnecessarily double-quoted strings -- which I did a find/replace to fix
+* Rubocop didn't like the length of some of my comments -- I inserted a line break and just continued the comment on a 
+second line
+* I also had some unnecessary trailing lines, which was easy enough to fix -- I just removed them.
