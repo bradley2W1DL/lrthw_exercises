@@ -41,4 +41,4 @@ The single-quoted strings will work the same as double quoted strings with the e
 single-quotes used inside them, such as apostrophe's, etc.  You also have to use double-quotes when using interpolation
 inside strings (#{}).<br/>
 According to Rubocop, it's a best practice to use single quotes for strings anytime that double-quotes aren't actually 
-required.
+required.  This is because single-quoted strings are not evaluated, which might equate to saved processing power. (?)
