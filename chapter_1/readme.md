@@ -1,7 +1,7 @@
 ## Chapter 1 Readme
 ___
 
-Rubocop will complain about the double quoted strings. In the Readme.md for this directory, explain how you got rid of 
+>Rubocop will complain about the double quoted strings. In the Readme.md for this directory, explain how you got rid of 
 the offenses. Did you fix the strings? Or did you tell Rubocop to ignore those code style violations? Why did you pick 
 what you did?
 
@@ -9,4 +9,4 @@ what you did?
 the ex1.rb file to replace " with ' except for the two lines that required the double-quoted strings (line 6 & 7).
 
 I also go some offences for having comment lines that were too long.  So, I guess rubocop doesn't like any lines to be 
-longer than 80 characters (?).  To fix this was just goint
+longer than 80 characters (?). To fix this I broke the extra long comments down into multiple lines.  
