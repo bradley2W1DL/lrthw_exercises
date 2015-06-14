@@ -20,3 +20,14 @@ So I can just use single quotes on the first line of ex8.rb instead of double-qu
 ```ruby
 formatter = '%{first} %{second} %{third} %{fourth}'
 ```
+
+6/14/15 Update --
+
+I went back into the .rubocop.yml file and removed the max line-length change and then broke line 6 down onto a second
+line to not exceed 80 characters.  The auto-formatting for RubyMine indented the this new line in such a way that Rubocop
+did not agree with, so I had to do some tabbing and some spacing to get the line to look like this...
+```ruby
+puts formatter % { first: formatter, second: formatter, third: formatter,
+                   fourth: formatter }
+```
+This fixed an offence that Rubocop threw for the indentation of hash literals.

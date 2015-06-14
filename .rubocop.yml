@@ -3,11 +3,5 @@ AllCops:
     - "Guardfile"
     - "Gemfile"
 
-Style/LineLength:
-  Max: 100
-
-Style/ClosingParenthesisIndentation:
-  Enabled: true
-
 Style/IndentHash:
   Enabled: false
